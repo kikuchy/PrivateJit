@@ -5,6 +5,9 @@
     <title>Private Jit</title>
 </head>
 <body>
-
+    <form action="#" th:action="@{/api/v1/repository}" method="post">
+        <input type="text" th:field="${newRepository.url}"/>
+        <input type="submit"/>
+    </form>
 </body>
 </html>
